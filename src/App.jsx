@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      {!["/login", "/signup"].includes(location.pathname) ? <Navbar /> : null}
+      {!["/", "/login", "/signup"].includes(location.pathname) ? <Navbar /> : null}
       <Routes>
         <Route
           path="/profile"

@@ -700,12 +700,14 @@ export default function StudentsDashboard() {
                         >
                           Ngày sinh
                         </Label>
-                        <DatePickerInput
-                          id="dob"
-                          prop="dob"
-                          value={currentChangedUser.dob}
-                          action={handleStoreChanges}
-                        />
+                        <div className="lg:col-span-5">
+                          <DatePickerInput
+                            id="dob"
+                            prop="dob"
+                            value={currentChangedUser.dob}
+                            action={handleStoreChanges}
+                          />
+                        </div>
                       </div>
                       <div className="w-full grid lg:grid-cols-7 gap-2.5 grid-cols-1 items-center border-b py-6">
                         <Label
